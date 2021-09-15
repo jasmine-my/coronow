@@ -190,14 +190,14 @@ main {
     min-height: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .box {
-    width: 40%;
     height: 670px;
     border-radius: 10px;
     background: #fff;
-    margin: 10px;
+    margin: 10px 0;
     padding: 16px;
     position: relative;
 }
@@ -215,6 +215,7 @@ main {
 
 /*box1*/
 .box1 {
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -330,7 +331,7 @@ select:focus {
     height: 58px;
     border-right: rgba(0,0,0,0.3) 1px dotted;
     position: absolute;
-    right: 47px;
+    right: 39px;
     top: 50px;
 }
 .chart-content p:nth-child(2) {
@@ -356,17 +357,17 @@ select:focus {
 }
 .chart-Y span::after {
     content: "";
-    width: 410px;
+    width: 380px;
     height: 0.5px;
     background: rgba(0,0,0,0.1);
     position: absolute;
-    right: 40px;
+    right: 30px;
     margin-top: 10px;
 }
 
 /*box2*/
 .box2 {
-    width: 50%;
+    width: 55%;
 }
 .box2 .icon { 
     color: #ff090b;
@@ -476,7 +477,7 @@ input#b17:checked ~ label:nth-of-type(17) { background: rgb(99, 99, 99); color: 
 
 /*box3*/
 .box3 {
-    width: 33%;
+    width: 40%;
 }
 .box3 label {
     display: inline-block;
@@ -497,6 +498,7 @@ input#b17:checked ~ label:nth-of-type(17) { background: rgb(99, 99, 99); color: 
 }
 .box3 .text ul {
     margin-left: 20px;
+    padding-right: 20px;
 }
 
 input#btn1:checked ~ div.btn-text1,
@@ -513,13 +515,14 @@ input#btn3:checked ~ div.btn-text3 { display:block; }
     font-size: 18px;
     position: absolute;
     bottom: 20px;
-    left: 50px;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 30px;
     border: none;
 }
 .box3 .title::after {
     content: "";
-    width: 350px;
+    width: 430px;
     height: 1px;
     background: rgba(0,0,0,0.3);
     position: absolute;
@@ -536,7 +539,7 @@ input#btn3:checked ~ div.btn-text3 { display:block; }
 
 /*box4*/
 .box4 {
-    width: 57%;
+    width: 55%;
 }
 .box4 .map {
     width: 100%;
@@ -684,4 +687,9 @@ footer::after {
     list-style-type: none;
     float: left;
     padding: 20px 20px 20px 0;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    font-weight: lighter;
 }
